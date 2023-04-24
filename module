@@ -1,9 +1,0 @@
--
-  name : pb on use case of yum module
-  hostes : client1
-  tasks : 
-    name : code to install net-tools application
-    yum : 
-      name : net net-tools
-      state : present
-      
