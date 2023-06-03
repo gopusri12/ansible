@@ -1,8 +1,5 @@
--
- name:  pb on use case of yum module
-  hosts: client1
-  task:
-    name: code to install net-tools application
-    yum:
-     name: net-tools
-     state: present
+- name: Install the latest version of Apache
+  yum:
+    name: httpd
+    state: latest
+
