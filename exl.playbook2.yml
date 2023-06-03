@@ -1,7 +1,7 @@
-- name: use case of yum module
+- name:  pb on use case of yum module
   hosts: client1
-  ansible.builtin.yum:
+  task:
     name: code to install net-tools application
-    ansible.builtin.yum:
-    name: net-tools
-    state: present
+    yum:
+     name: net-tools
+     state: present
