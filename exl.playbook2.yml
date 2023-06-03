@@ -1,5 +1,9 @@
-- name: Install the latest version of Apache
-  yum:
-    name: httpd
-    state: latest
+---
+- hosts: [mainserver]
+  remote_user: root
+  become: yes
+  tasks:
+        - name: install Apache
+          yum: name=httpd 
+          state: present
 
