@@ -3,8 +3,7 @@
   remote_user: root
   become: yes
   tasks:
-        - name: install Apache
-          yum: name=httpd 
-          state: present
-          
+        -name: install Apache
+          yum: name=httpd  state: present
+
 
